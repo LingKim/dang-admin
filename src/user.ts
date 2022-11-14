@@ -10,4 +10,9 @@ router.get('/findUserInfo/:username',async (ctx) => {
 	 ctx.body = `欢迎${username}`
 })
 
+router.post('/addUser',async (ctx) => {
+	const { username } =  ctx.request.body;
+	ctx.body = `欢迎${username}`
+})
+
 export default router

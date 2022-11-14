@@ -17,6 +17,6 @@ router.use(body())
 router.use(userRouter.routes(),userRouter.allowedMethods())
 
 app.use(router.routes())
-app.listen('9080',() => {
+app.listen('8090',() => {
 	console.log ('Koa服务启动了');
 })
